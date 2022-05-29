@@ -1,0 +1,15 @@
+/*
+primitive Data Types
+
+number
+string
+undefined
+boolean
+null
+symbol
+
+non primitive Data Types
+
+Object
+
+*/

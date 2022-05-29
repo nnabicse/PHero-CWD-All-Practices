@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+</head>
+<body>
+    <h2>Event Delegate</h2>
+    <ul id="item-container">
+        <li class="item">Lorem, ipsum.</li>
+        <li class="item">Nulla, rem.</li>
+        <li class="item">Tempora, fugit.</li>
+        <li class="item">Perspiciatis, repellendus!</li>
+        <li class="item">Amet, porro!</li>
+        <li class="item">Commodi, officia.</li>
+    </ul>
+
+    <p class="nav">I am Hero Alam 1</p>
+    <p class="nav">I am Hero Alam 2</p>
+
+    <script>
+        const items = document.getElementsByClassName('item')
+        for(const item of items){
+            item.addEventListener('click', function(event){
+            //     document.getElementById('item-container').removeChild(item);
+            
+                event.target.parentNode.removeChild(event.target);
+
+            })
+        }
+
+
+        var p = document.getElementsByClassName('nav')[0];
+        p.classList.remove('nav');
+        console.log(p.className);
+    </script>
+</body>
+</html>

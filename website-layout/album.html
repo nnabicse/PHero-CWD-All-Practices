@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        .photo-frame{
+            width: 300px;
+            height: 200px;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+            margin: 1px;
+            overflow: hidden;
+        }
+        .photo-frame img{
+            width: 100%;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+        }
+        .photo-detail{
+            display: none;
+            position: absolute;
+            width: 300px;
+            top: 0;
+        }
+        .photo-detail h3{
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .photo-frame:hover .photo-detail{
+            display: block;
+            background-color: rgba(194, 187, 169, 0.7);
+
+        }
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+        .photo-frame:hover .photo{
+            transform: scale(1.5) skew(30deg);
+            transition: transform 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Photo Album</h1>
+    <section>
+        <h3>Tiger Album</h3>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Tiger MAMA Candid</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis perspiciatis eligendi nobis, dolores culpa explicabo rerum harum fuga quas soluta ab libero. Voluptate, rem amet? Enim nisi itaque ipsa!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
